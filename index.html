@@ -1,0 +1,405 @@
+<!doctype html>
+<html class="inload">
+<head>
+<meta charset="utf-8">
+<title>جدول سرای نوآوری</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/latest/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/latest/respond.min.js"></script>
+<![endif]-->
+<style>
+@charset "utf-8";
+/*
+Danialzameni.com Developed.
+©2020 All Rights Reserved.
+*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,main, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, main, menu, nav, section{display:block;}
+*{-ms-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box;-webkit-appearance:none;-webkit-text-size-adjust: none;}
+html{direction:rtl;}
+body{-webkit-tap-highlight-color:rgba(0,0,0,0);transition:.3s ease-in;overflow-x:hidden;margin:0;background:#9398b4;}
+body,input,textarea,select,button,select option{font-family:tahoma;font-size:14px;}
+html,body{height:100%;}
+a{text-decoration:none;}
+button:focus{outline:0;border:none;}
+*,*:before,*:after{ -webkit-box-sizing:border-box; box-sizing:border-box; }
+.noselect{-webkit-touch-callout: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+::-moz-selection{color:#1B3281;}
+::selection{color:#1B3281;}
+::-moz-selection{color:#1B3281;}
+input:focus{-webkit-box-shadow:none;box-shadow:none;outline:0;}
+header{transition:.3s ease-in;padding:20px;height:150px;overflow:hidden;display:flex;justify-content:center;align-items:center;box-shadow:0 0 35px 20px #0003;borsder-bottom:2px dashed #0006;}
+.logotype{margin-right:15px;margin-top:-50px;transition:.6s ease-out .3s;max-width:300px;overflow-x:hidden;white-space:nowrap;}
+.logotype h1{display:flex;flex-direction:column;position:relative;z-index:1;font-size:40px;font-weight:bold;margin-bottom:10px;background:#000;padding:0px 6px 5px;border-bottom-right-radius:20px;color:#9398b4;border-bottom-left-radius: 20px;}
+.logotype h1:before{content:'';z-index:-1;background:#000;po4sition:absolute;left:0;width:100%;height:50px;top:0;}
+.logotype h2{font-size:16.7px;font-weight:bold;color:#000;}
+header .logo{max-width:80px;transition:.2s ease-in;fill:#000;height:100%;display:block;margin-right:-15px;}
+body.loading{background-color:#1B3281;}
+.loading .logotype{max-width:0;margin-right:0;}
+.loading header{height:100%;padding:0;}
+.loading header .logo{max-width:100vw;fill:#9398b4;margin-right:0;animation:1.8s logoloading ease-in-out forwards;}
+@keyframes logoloading{0%{transform:translateY(10vh);margin-top:auto;height:200vh}30%{margin:auto;height:50vh;}40%{margin:auto;height:50vh;}50%{opacity:1;}60%{opacity:.1;}80%{opacity:1;}100%{margin:auto;height:100vh;}}
+.loading main{display:none;}
+main{display:flex;padding:50px;height:calc(100vh - 150px);}
+.answersheet{flex:1;display:flex;flex-direction:column;background:#fff;margin-left:50px;border-radius:20px;}
+.answersheet .sheetheader{border-bottom:2px solid #000;display:flex;/*! width:100%; */margin: 10px 20px;}
+.answersheet .sheetheader span{padding:10px 20px 15px;}
+.answersheet .sheetheader a{transition:.1s ease-in;border-top-left-radius:15px;border-top-right-radius:15px;cursor:pointer;flex:1;display:flex;align-items:center;justify-content:center;}
+.answersheet .sheetheader a.active{cursor:default;background:#000;color:#fff;}
+.sheetcontent{flex:1;overflow-y:auto;}
+.horizontalsheet,.verticalsheet{display:none;}
+.horizontalsheet.active,.verticalsheet.active{padding:0 20px;display:flex;flex-direction:column;}
+.sheetcontent p{display:flex;flex-direction:column;margin-bottom:10px}
+.sheetcontent p:before{font-weight:bold;}
+.sheetcontent p:nth-child(1):before{content:'١.';}
+.sheetcontent p:nth-child(2):before{content:'۲.';}
+.sheetcontent p:nth-child(3):before{content:'۳.';}
+.sheetcontent p:nth-child(4):before{content:'۴.';}
+.sheetcontent p:nth-child(5):before{content:'۵.';}
+.sheetcontent p:nth-child(6):before{content:'۶.';}
+.sheetcontent p:nth-child(7):before{content:'۷.';}
+.sheetcontent p:nth-child(8):before{content:'۸.';}
+.sheetcontent p:nth-child(9):before{content:'۹.';}
+.sheetcontent p:nth-child(10):before{content:'۱۰.';}
+.sheetcontent p span:before{color:#0009;}
+.sheetcontent p span:nth-child(1):before{content:'بخش اول: ';}
+.sheetcontent p span:nth-child(2):before{content:'بخش دوم: ';}
+.sheetcontent p span:nth-child(3):before{content:'بخش سوم: ';}
+.sheetcontent p span:nth-child(4):before{content:'بخش چهارم: ';}
+.sheetcontent p span:nth-child(5):before{content:'بخش پنجم: ';}
+.sheetcontent p span:nth-child(6):before{content:'بخش ششم: ';}
+.sheetcontent p span:nth-child(7):before{content:'بخش هفتم: ';}
+.sheetcontent p span:nth-child(8):before{content:'بخش هشتم: ';}
+.sheetcontent p span:nth-child(9):before{content:'بخش نهم: ';}
+.sheetcontent p span:nth-child(10):before{content:'بخش دهم: ';}
+.result{width:200px;margin-right:50px;display:flex;flex-direction:column;align-items:center;justify-content:space-around;}
+.leftover{font-size:20px;color:#0009;margin:10px 0 20px;}
+.leftover,.leftover div{display:flex;align-items:center;}
+.leftover span{background:#000;border-radius:50px;color:#9398b4;padding:5px 10px;margin-right:10px;font-weight: bold;}
+.leftover.done div{display:none;}
+.leftover.done:before{content:'موفق باشید :)';}
+.timer{font-size:45px}
+.result input{min-width:200px;text-align:center;background:#fff;border:none;padding:20px;width:100%;border-radius:20px;font-weight:bold;}
+.result .print{background:#000;width:100%;color:#fff;text-align:center;border-radius:20px;font-weight:bold;padding:20px;cursor:pointer;margin-top:10px;display:flex;justify-content:center;}
+.result .print svg{height:20px;margin-left:10px;}
+.table{margin:auto;display:flex;flex-direction:column;border-radius:20px;width:600px;height:100%;}
+.table .radif{flex:1;display:flex;}
+.table .input{border:1px solid #0003;display:flex;flex-direction:column;position:relative;flex: 1;}
+.table .input input{transition:.1s ease-in;text-align:center;background:#fff0;border:none;border-radius:0!important;margin:0!important;padding:0!important;min-width:0;width:100%;flex:1;font-size: 17px;line-height: 0px;padding-bottom: 5px;font-weight: bold;}
+.table .input input:focus{color:#0009;background-color:#0003;}
+.table .input input:not(:focus){cursor:pointer;}
+.table .input:empty{cursor:not-allowed;background:#000;}
+.table .radif .input:before{opacity:.5;position:absolute;content:'';top:-25px;right:0;left:0;margin:auto;text-align:center;justify-content:center;display:none;width:100%;}
+.table .radif .input:after{opacity:.5;position:absolute;content:'';right:-31px;top:0;bottom:0;direction:ltr;display:none;align-items:center;margin:auto;text-align:center;width:20px;}
+.table .radif:nth-child(1) .input{border-top:1px solid #000;}
+.table .radif:nth-last-child(1) .input{border-bottom:1px solid #000;}
+.table .radif .input:nth-child(1){border-right:1px solid #000;}
+.table .radif .input:nth-last-child(1){border-left:1px solid #000;}
+.table .radif:nth-child(1) .input:nth-child(1),.table .radif:nth-child(1) .input:nth-child(1) input{border-top-right-radius:15px!important;}
+.table .radif:nth-child(1) .input:nth-last-child(1),.table .radif:nth-child(1) .input:nth-last-child(1) input{border-top-left-radius:15px!important;}
+.table .radif:nth-last-child(1) .input:nth-child(1),.table .radif:nth-last-child(1) .input:nth-child(1) input{border-bottom-right-radius:15px!important;}
+.table .radif:nth-last-child(1) .input:nth-last-child(1),.table .radif:nth-last-child(1) .input:nth-last-child(1) input{border-bottom-left-radius:15px!important;}
+.table .radif:nth-child(1) .input:nth-child(1):before,.table .radif:nth-child(1) .input:nth-child(1):after{content:'١';display:flex;}
+.table .radif:nth-child(1) .input:nth-child(2):before,.table .radif:nth-child(2) .input:nth-child(1):after{content:'۲';display:flex;}
+.table .radif:nth-child(1) .input:nth-child(3):before,.table .radif:nth-child(3) .input:nth-child(1):after{content:'۳';display:flex;}
+.table .radif:nth-child(1) .input:nth-child(4):before,.table .radif:nth-child(4) .input:nth-child(1):after{content:'۴';display:flex;}
+.table .radif:nth-child(1) .input:nth-child(5):before,.table .radif:nth-child(5) .input:nth-child(1):after{content:'۵';display:flex;}
+.table .radif:nth-child(1) .input:nth-child(6):before,.table .radif:nth-child(6) .input:nth-child(1):after{content:'۶';display:flex;}
+.table .radif:nth-child(1) .input:nth-child(7):before,.table .radif:nth-child(7) .input:nth-child(1):after{content:'۷';display:flex;}
+.table .radif:nth-child(1) .input:nth-child(8):before,.table .radif:nth-child(8) .input:nth-child(1):after{content:'۸';display:flex;}
+.table .radif:nth-child(1) .input:nth-child(9):before,.table .radif:nth-child(9) .input:nth-child(1):after{content:'۹';display:flex;}
+.table .radif:nth-child(1) .input:nth-child(10):before,.table .radif:nth-child(10) .input:nth-child(1):after{content:'۱۰';display:flex;}
+@media((max-height:550px) and (min-width:1250px)),(max-width:1250px){
+main{height:auto;flex-wrap:wrap;justify-content:center;}
+.answersheet{order:3;margin-top:50px;flex:0 0 850px;margin-left:0;}
+.table{order:1;margin:0;}
+.result{order:2;}
+}
+@media(max-width:1250px) and (min-height:550px){
+.table{height:calc(100vh - 250px);}
+}
+@media(max-width:950px) and (max-height:590px){.table{height:auto;}}
+@media(max-width:950px) and (min-height:680px){
+.table{height:calc(100vh - 310px);}
+@media(min-height:600px){table{height:auto;}}
+}
+@media(max-width:950px) and (min-height:590px){
+.table{height:calc(100vh - 310px);}
+@media(max-width:680px){
+.table{height:calc(100vh - 290px);}
+}
+}
+@media(max-width:950px){
+main{padding:20px;}
+.result{flex-direction:row;margin-right:0;width:620px;margin-bottom:20px;margin-top:20px;}
+.table{margin-top:20px;}
+.leftover{margin:0;}
+.answersheet{margin-top:20px;flex:0 0 600px;}
+header{height:100px;}
+.logotype h1{font-size:33px;}
+.logotype h1:before{height:35px;}
+.logotype h2{font-size:14px;}
+}
+@media(max-width:680px){
+.result{flex-wrap:wrap;justify-content:center;}
+.form{flex:1 0 100%;display:flex;margin-top:20px;}
+.result .print{margin-top:0;margin-right:20px;}
+.leftover{margin-right:20px;font-size:15px;}
+.timer{font-size:25px;}
+main{padding:20px 35px 35px;}
+.answersheet{flex:1 0 100%;}
+}
+@media(max-width:444px){
+.table .input input{font-size:13px;padding-bottom:4px;}
+.form{flex-direction:column;}
+.result .print{margin-right:0;margin-top:10px;}
+.logotype{margin-right:5px;}
+.answersheet .sheetheader span{padding:10px 10px 15px;}
+}
+@media(max-width:444px) and (min-height:590px){
+.table{height:calc(100vh - 370px);}
+}
+@media print{
+.print{display:none;}
+}
+</style>
+</head>
+<body class="loading">
+<header>
+<svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve"><g id="Layer_2"></g><g id="Layer_1"><path class="st0" d="M366.7,672.3c1.4,1.2,2.7,2.5,4.1,3.7c34.3,29.8,68.6,59.6,102.8,89.4c6.4,5.6,12.9,11.2,19.3,16.8c1.4,1.2,1.5,1.2,2.9,0c4.3-3.7,8.6-7.5,13-11.2c37.5-32.6,74.9-65.1,112.4-97.7c4.8-4.2,9.5-8.4,14.3-12.6c0.6-0.4,1.2-0.8,1.8-1.3c2.5-2.2,5-4.4,7.6-6.6c32.4-28.2,64.8-56.3,97.2-84.5c23.9-20.8,47.9-41.6,71.8-62.4c3.5-3,3.1-2.1,0.8-5.9c-18.7-31-37.4-62.1-56.2-93.1c-29.4-48.6-58.8-97.3-88.2-145.9c-18.2-30.2-36.5-60.3-54.8-90.5c-15.5-25.6-30.9-51.1-46.3-76.7c-13.7-22.7-27.4-45.4-41.1-68.1c-0.8-1.3-1.7-2.7-2.9-4.6c0,1.7,0,2.6,0,3.5c0,26,0,52-0.1,78c0,16.1,0,32.2-0.1,48.2c0,1.9,0.4,3.5,1.5,5.2c2.9,4.7,5.7,9.4,8.6,14.1c21.7,35.8,43.4,71.6,65.1,107.3c40.2,66.3,80.4,132.6,120.6,198.9c2.7,4.5,5.5,9,8.1,13.4c-0.2,0.9-0.7,1.3-1.2,1.7c-10.5,9.9-21,19.8-31.6,29.8c-0.5,0.4-0.9,0.9-1.4,1.3c-0.4,0.3-0.8,0.3-1.2-0.1c-0.4-0.4-0.7-0.8-1.1-1.2c-4-4.9-8.1-9.8-12.1-14.7c-21.5-26.2-43.1-52.3-64.6-78.5c-19.7-23.9-39.3-47.8-59-71.7c-18.2-22.2-36.5-44.3-54.8-66.4c-0.6-0.7-1.1-1.6-2.2-2.1c-2.2,2.6-4.4,5.2-6.6,7.9c-2.3,2.7-4.5,5.5-6.8,8.3c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.7-4.5,5.5-6.8,8.2c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.7-4.5,5.5-6.8,8.3c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.7-4.5,5.5-6.8,8.2c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.7-4.5,5.5-6.8,8.3c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.7-4.5,5.5-6.8,8.2c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.7-4.5,5.5-6.8,8.2c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.8-4.5,5.5-6.8,8.2c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.7-4.5,5.5-6.8,8.2c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.8-4.5,5.5-6.8,8.3c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.7-4.5,5.5-6.8,8.2c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.8-4.5,5.5-6.8,8.3c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.7-4.5,5.5-6.8,8.2c-2.2,2.7-4.4,5.3-6.6,8c-2.3,2.7-4.5,5.5-6.8,8.2c-2.2,2.6-4.2,5.4-6.6,7.8c-1.1-0.4-1.6-1.1-2.2-1.7c-6.4-6-12.7-12-19.1-18c-3.8-3.6-7.7-7.2-11.5-10.9c-2.6-2.5-2.5-1.8-0.6-5c0.1-0.1,0.1-0.2,0.2-0.3c5.1-8.4,10.2-16.8,15.3-25.2c41.7-68.8,83.4-137.6,125.1-206.4c17.1-28.2,34.2-56.4,51.3-84.7c3.1-5.2,6.2-10.4,9.4-15.5c0.8-1.3,1.3-2.7,1.2-4.3c0-0.4,0-0.9,0-1.3c0-41.9,0-83.7-0.1-125.6c0-0.9,0-1.9,0-2.8c-0.8,0.3-1,1-1.3,1.5c-8.7,14.4-17.4,28.8-26.1,43.2c-17.4,28.8-34.8,57.6-52.2,86.4c-25.2,41.7-50.5,83.4-75.7,125.1c-44.7,73.9-89.4,147.9-134,221.8c-2.9,4.8-3.2,3.3,1.1,7.1c14.1,12.3,28.3,24.6,42.5,36.9c27.8,24.1,55.6,48.2,83.3,72.4c0.5,0.4,1,0.8,1.5,1.2c0.4,0.3,0.8,0.2,1.1-0.1c0.4-0.4,0.7-0.8,1.1-1.2c8.2-10,16.5-20,24.7-29.9c21.2-25.6,42.3-51.2,63.5-76.8c20.1-24.4,40.3-48.7,60.4-73.1c11.1-13.4,22.1-26.8,33.2-40.2c0.5-0.6,0.9-1.5,1.8-1.7c2.4,2.2,132.6,159.4,142,171.4c0.4,0.5,0.9,0.9,0.9,1.8c-0.6,0.6-1.3,1.2-2,1.9c-10.5,9.1-21.1,18.2-31.6,27.3c-23.9,20.7-47.9,41.3-71.8,62c-0.4,0.3-0.7,0.8-1.1,1.2c-0.8,0.6-1.5,1.2-2.3,1.8c-12.3,10.6-24.6,21.3-37,31.9c-0.9,0.8-1.8,1.8-3.1,2.3c-1-0.8-1.9-1.6-2.8-2.3c-6.9-6-13.9-12-20.8-18c-2.4-2.1-4.9-4.2-7.4-6.2c-1.3-1.2-2.5-2.4-3.8-3.5c-10.7-9.2-21.4-18.4-32-27.7c-15.3-13.2-30.7-26.5-46-39.7c-0.6-0.5-1.1-1.4-2.3-1.3c-1.8,2.1-3.7,4.3-5.6,6.5c-11.7,13.7-23.3,27.4-35,41.1c-1.9,2.2-1.9,2.1,0.3,4c8.9,7.8,17.9,15.6,26.8,23.3C366,671.9,366.4,672.1,366.7,672.3z"/><path class="st0" d="M173.4,682.5c-0.6,0.6-1.2,1.2-1.8,1.8c-9.3,10.7-18.6,21.3-27.8,32c-2.7,3.1-5.4,6.2-8.1,9.3c-0.6,0.7-0.5,1.1,0.2,1.6c0.7,0.5,1.4,1,2.1,1.5c117.9,81.8,235.7,163.6,353.6,245.4c3.5,2.4,2.4,2.5,6,0C602.4,903.5,707.1,833,811.9,762.4c16.7-11.3,33.5-22.5,50.2-33.8c1-0.6,2.1-1.1,2.8-2.3c-0.8-1-1.6-2-2.5-2.9c-8.6-9.8-17.1-19.7-25.7-29.5c-24.9-28.6-49.7-57.1-74.6-85.7c-0.5-0.6-0.9-1.3-1.9-1.4c-16.3,13-32.6,26-49,39.1c-0.2,0.2-0.3,0.5-0.6,0.9c6.1,7.5,12.2,15,18.4,22.5c6.1,7.5,12.3,15,18.4,22.6c6.1,7.5,12.3,15,18.5,22.7c-1.3,0.9-2.3,1.6-3.4,2.3c-84.4,55.9-168.9,111.9-253.3,167.8c-4.4,2.9-8.8,5.8-13.2,8.8c-1,0.7-1.9,0.9-2.9,0.1c-0.8-0.7-1.8-1.2-2.6-1.9c-66.4-45.9-132.8-91.7-199.2-137.6c-18.2-12.6-36.4-25.1-54.6-37.7c-0.8-0.6-1.9-1-2.4-2.1c0.6-0.7,1-1.3,1.5-1.9c3.7-4.6,7.5-9.2,11.2-13.8c3.8-4.7,7.6-9.4,11.3-14.1c0.3-0.3,0.7-0.5,0.9-0.9c9.6-11.8,19.2-23.5,28.8-35.3c0.5-0.6,0.9-1.2,1.4-1.9c-0.9-1.2-2.1-2-3.2-2.8c-14.4-11.5-28.8-23-43.2-34.5c-1.2-0.9-2.2-2.6-3.7-2.4c-1.4,0.2-2.2,2-3.1,3.1c-20.2,23.2-40.4,46.3-60.5,69.5C174.9,680.4,173.9,681.3,173.4,682.5z"/></g></svg>
+<div class="logotype"><h1>سرای نوآوری</h1><h2>و فناوری های آموزشی تهران غرب</h2></div>
+</header>
+<main>
+<div class="answersheet">
+    <div class="sheetheader noselect"><span>پاسخ نامه:</span><a onClick="sheetside('horizontal',this)" class="active">افقی</a><a onClick="sheetside('vertical',this)">عمودی</a></div>
+    <div class="sheetcontent">
+        <div class="horizontalsheet active">
+            <!-- pasokhnameye ofoqi start -->
+            <p><span>ندای درد</span><span>مادر ورزش ها</span><span>شربت بدون شین</span></p>
+            <p><span>سبد</span><span>موسسه های آموزشی تکمیلی</span></p>
+            <p><span>بزرگترین بازار انواع اپلیکیشن های گوشی هوشمند در ایران</span></p>
+            <p><span>زمان بر</span><span>نوعی فرش و منسوخ درشت بافت در ابعاد کوچک</span></p>
+            <p><span>یکی از انواع پوشاک</span><span>شعار سرا «...... و فناوری کلید آینده»</span></p>
+            <p><span>حرف نهم یونانی</span><span>دستگاهی برای مکش یا جابجایی هوا</span></p>
+            <p><span>ایده های جذاب</span><span>به معنای باختن</span></p>
+            <p><span>تغییر مسیر و استراژی اشتباه شکست ... درصد از استارتاپ هاست</span><span>اطلاعات دیجیتالی و رایانه ای</span></p>
+            <p><span>روستایی از توابع بخش مرکزی شهرستان تفرش</span><span>بازاریابی شبکه ای</span></p>
+            <p><span>کارشناس مستقر در سرای نوآوری و فناوری های آموزشی تهران غرب</span></p>
+            <!-- pasokhnameye ofoqi end -->
+        </div>
+        <div class="verticalsheet">
+            <!-- pasokhnameye amoodi start -->
+            <p><span>اولین شرکت مستقر در سرای نوآوری و فناوری های آموزشی تهران غرب</span></p>
+            <p><span>از مهمترین مسائل برای موفقیت در کارآفرینی</span><span>از زبان های برنامه نویسی</span></p>
+            <p><span>عدم توانایی در تغییر، عامل شکست ... درصد از استارتاپ هاست</span><span>بدون آن قدم برداشتن بی معنی است</span></p>
+            <p><span>یک منطقه مسکویی در آلمان و سودرهایشندت</span></p>
+            <p><span>زندگی نامه افراد</span><span>دستورعمل تبدیل اطلاعات از یک قالب به قالبی دیگر</span></p>
+            <p><span>فرایند خلق ارزش جدید از طریق یک تلاش متعهدانه</span></p>
+            <p><span>پوشیده و پنهان</span><span>درخت زبان گنجشک</span><span>شتابدهنده مستقر در سرای نوآوری</span></p>
+            <p><span>سایت اینترنتی میزبان برای ابعاد وبلاگ بصورت رایگان</span><span>اطلاعات و یقین</span></p>
+            <p><span>علوم مبتنی بر تجربه</span></p>
+            <p><span>پیوند</span></p>
+            <!-- pasokhnameye amoodi end -->
+        </div>
+    </div>
+</div>
+<div class="table">
+<!-- jadval start -->
+
+    <div class="radif">
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+    </div>
+
+    <div class="radif">
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+    </div>
+
+    <div class="radif">
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+    </div>
+
+    <div class="radif">
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+    </div>
+
+    <div class="radif">
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+    </div>
+
+    <div class="radif">
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+    </div>
+
+    <div class="radif">
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+    </div>
+
+    <div class="radif">
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+    </div>
+
+    <div class="radif">
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+    </div>
+
+    <div class="radif">
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"><input type="text"></div>
+        <div class="input"></div>
+        <div class="input"></div>
+    </div>
+
+<!-- jadval end -->
+</div>
+<div class="result noselect">
+    <span class="timer" id="display">00:00:00</span>
+    <div class="leftover"><div>باقی مانده: <span>10</span></div></div>
+    <div class="form">
+    <input type="text" placeholder="نام و نام خانوادگی"/>
+    <div class="print" onClick="window.print()">
+        <svg version="1.1" id="icon-print" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;fill:#fff" xml:space="preserve"><g><g><path d="M329.956,399.834H182.044c-9.425,0-17.067,7.641-17.067,17.067s7.641,17.067,17.067,17.067h147.911c9.425,0,17.067-7.641,17.067-17.067S339.381,399.834,329.956,399.834z"/></g></g><g><g><path d="M329.956,346.006H182.044c-9.425,0-17.067,7.641-17.067,17.067s7.641,17.067,17.067,17.067h147.911c9.425,0,17.067-7.641,17.067-17.067S339.381,346.006,329.956,346.006z"/></g></g><g><g><path d="M472.178,133.907h-54.303V35.132c0-9.425-7.641-17.067-17.067-17.067H111.192c-9.425,0-17.067,7.641-17.067,17.067v98.775H39.822C17.864,133.907,0,151.772,0,173.73v171.702c0,21.958,17.864,39.822,39.822,39.822h54.306v91.614c0,9.425,7.641,17.067,17.067,17.067h289.61c9.425,0,17.067-7.641,17.067-17.067v-91.614h54.306c21.958,0,39.822-17.864,39.822-39.822V173.73C512,151.773,494.136,133.907,472.178,133.907z M128.258,52.199h255.483v81.708H128.258V52.199z M383.738,459.801H128.262c0-3.335,0-135.503,0-139.628h255.477C383.738,324.402,383.738,456.594,383.738,459.801z M400.808,234.122h-43.443c-9.425,0-17.067-7.641-17.067-17.067s7.641-17.067,17.067-17.067h43.443c9.425,0,17.067,7.641,17.067,17.067S410.234,234.122,400.808,234.122z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+        <span>پرینت جدول</span>
+    </div>
+    </div>
+</div>
+</main>
+<script type="text/javascript">
+setInterval(function(){document.body.classList.remove('loading');start();},2000);
+let inputnum=0;
+// Danialzameni.com on the line.
+document.querySelectorAll('.table input').forEach(function(item,i){
+item.value='';
+inputnum++;
+  item.addEventListener('click',function(e){
+    item.value='';
+  });
+  item.addEventListener('input',function(e){
+    let inputsecondnum=0;
+    document.querySelectorAll('.table input').forEach(function(item,i){if(item.value==''){inputsecondnum++;}});
+    document.querySelector('.leftover span').innerHTML=toPersianDigits(inputsecondnum);
+    if(item.value.length==1){
+      if(inputsecondnum!=0){
+        // let ifvertical=document.querySelector('.verticalsheet').classList.contains('active');
+        // if(ifvertical){console.log(getNodeIndex(item));}else{document.querySelectorAll('.table input')[i+1].focus();}
+      }else{
+        document.querySelector('.leftover').classList.add('done');
+        pause();
+      }
+    }else if(item.value.length==2){
+      item.value=item.value.slice(1,0);
+      start();
+      return false;
+    }
+  });
+});
+document.querySelector('.leftover span').innerHTML=toPersianDigits(inputnum);
+function sheetside(e,event){
+  document.querySelectorAll('.sheetheader a').forEach(function(d){d.classList.remove('active');});
+  event.classList.add('active');
+  document.querySelectorAll('.horizontalsheet')[0].classList.remove('active');
+  document.querySelectorAll('.verticalsheet')[0].classList.remove('active');
+  document.querySelectorAll('.'+e+'sheet')[0].classList.add('active');
+}
+function toPersianDigits(str){var id = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];return str.toString().replace(/[0-9]/g, function (w) {return id[+w];});}
+function timeToString(time) {let diffInHrs = time / 3600000;let hh = Math.floor(diffInHrs);let diffInMin = (diffInHrs - hh) * 60;let mm = Math.floor(diffInMin);let diffInSec = (diffInMin - mm) * 60;let ss = Math.floor(diffInSec);let diffInMs = (diffInSec - ss) * 100;let ms = Math.floor(diffInMs);let formattedMM = mm.toString().padStart(2, "0");let formattedSS = ss.toString().padStart(2, "0");let formattedMS = ms.toString().padStart(2, "0");return toPersianDigits(`${formattedMM}:${formattedSS}:${formattedMS}`);}
+let startTime;
+let elapsedTime = 0;
+let timerInterval;
+function print(txt) {document.getElementById("display").innerHTML = txt;}
+function start() {startTime = Date.now() - elapsedTime;timerInterval = setInterval(function printTime() {elapsedTime = Date.now() - startTime;print(timeToString(elapsedTime));}, 10);}
+function pause() {clearInterval(timerInterval);}
+</script>
+</body>
+</html>
